@@ -1,0 +1,17 @@
+body {
+    padding: 20px;
+    margin: 0;
+}
+
+.warningbox {
+    color: #f07800;
+    font-weight: bold;
+    background-color: #ffeddb;
+    border: 1px solid #f07800;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+.block {
+    margin-top: 20px;
+}

@@ -54,7 +54,7 @@ JSON.stringify(
 I have provided a ready-to-use stand-alone html page for local usage:
 
 1. Fire up a local http server (I recommend https://www.npmjs.com/package/http-server, start it inside the project folder with ```npx http-server . -o -p 9999```)
-2. Step into ```run``` folder and start ```convert.html```
+2. Step into the ```run``` folder and start ```convert.html```
 3. If you have predefined your Bitwarden organization ID, it is already pre-filled.
 
 ## Bugs and feature requests

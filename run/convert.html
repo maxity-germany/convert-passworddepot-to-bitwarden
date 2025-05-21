@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="convert.css">
+	<script type="module" src="convert.js"></script>
+</head>
+<body>
+	<form>
+		<div class="block">
+			<label for="organizationId">Bitwarden Organization ID:</label><br>
+			<input type="text" name="organizationId" id="organizationId" style="width: 300px;" placeholder="Enter Organization ID" />
+		</div>
+
+		<input type="file" name="importfile" id="importfile" class="block">
+
+		<div id="errorMsg" class="warningbox block" style="display:none;"></div>
+
+		<div class="block">
+			<div style="display:flex; align-items: center; justify-content: space-between; margin-bottom: 5px;">
+				<label for="json">Bitwarden Conditioned JSON:</label>
+				<button type="button" id="copy-to-clipboard" name="copy-to-clipboard">Copy to clipboard</button>
+			</div>
+			<textarea id="json" name="json" style="width: 100%;height: 70vh;"></textarea>
+		</div>
+	</form>
+</body>
+</html>
