@@ -12,7 +12,7 @@ function PasswordDepotToBitwardenConverterConfigObject()
 	 */
 
 	// has to be manually set before conversion when left empty
-	this.bitwardenOrganizationId = "";
+	this.bitwardenOrganizationId = "184c7224-f1f7-4e37-a900-b170009ca266";
 
 	// datetime format used in your PasswordDepot export;
 	// has to be defined manually, because Password Depot XML exports contain invalid date format strings

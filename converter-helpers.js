@@ -53,6 +53,16 @@ function PasswordDepotToBitwardenConverterFieldValueConvertersObject()
 
 	/**
 	 *
+	 * @param {string} password
+	 * @returns {string}
+	 */
+	this.convertHTMLSpecialChars = (password)=>
+	{
+		return he.decode(password);
+	};
+
+	/**
+	 *
 	 * @param {string} dateValue
 	 * @returns {string}
 	 */
@@ -116,7 +126,7 @@ function PasswordDepotToBitwardenConverterFieldValueConvertersObject()
 		if (PasswordDepotToBitwardenConverter.isStringEmpty(uri)) {
 			return "";
 		} else {
-			return [{ uri: uri }];
+			return [{ uri: he.decode(uri) }];
 		}
 	};
 

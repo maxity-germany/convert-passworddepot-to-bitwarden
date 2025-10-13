@@ -389,10 +389,12 @@ function PasswordDepotToBitwardenConverterObject()
 	 */
 	this.convertFieldValue = (fieldValue, converter, jsonItem) =>
 	{
+		let fValue = he.decode(fieldValue);
+
 		if (converter === null) {
-			return fieldValue;
+			return fValue;
 		} else {
-			return converter.call(this, fieldValue, jsonItem);
+			return converter.call(this, fValue, jsonItem);
 		}
 	};
 
